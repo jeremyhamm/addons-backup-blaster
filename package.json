@@ -1,0 +1,29 @@
+{
+  "name": "backup-blaster",
+  "version": "1.0.0",
+  "description": "Auto snapshot backups for 3rd party storage providers",
+  "author": "Jeremy Hamm",
+  "license": "MIT",
+  "homepage": "https://github.com/jeremyhamm/home-assistant-backup#readme",
+  "main": "./app/index.js",
+  "keywords": [
+    "home",
+    "assistant",
+    "backup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyhamm/home-assistant-backup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyhamm/home-assistant-backup/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}

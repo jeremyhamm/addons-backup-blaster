@@ -1,0 +1,25 @@
+{
+  "name": "Backup Blaster",
+  "version": "1.0.0",
+  "slug": "auto-snapshot-backups",
+  "description": "Auto snapshot backups for 3rd party storage providers",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "ingress": true,
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:8099]",
+  "map": ["ssl"],
+  "host_network": true,
+  "hassio_api": true,
+  "hassio_role": "manager",
+  "apparmor": true,
+  "advanced": true,
+  "options": {
+    "google-drive": false,
+    "dropbox": false
+  },
+  "schema": {
+    "google-drive": "bool",
+    "dropbox": "bool"
+  }
+}
